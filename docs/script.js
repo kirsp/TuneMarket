@@ -433,14 +433,14 @@ const opn = {
 }
 
 function checkUrl() {
-    if (window.location.href == "https://kirsp.github.io/TuneMarket#notifications") {
+    if (window.location.href == "https://kirsp.github.io/TuneMarket/index.html#notifications") {
         opn.notifications();
-    } else if (window.location.href.slice(0, 40) == "https://kirsp.github.io/TuneMarket#music") {
-        opn.music(window.location.href.slice(41, window.location.href.length - 1));
-    } else if (window.location.href == "https://kirsp.github.io/TuneMarket#categories") {
+    } else if (window.location.href.slice(0, 51) == "https://kirsp.github.io/TuneMarket/index.html#music") {
+        opn.music(window.location.href.slice(52, window.location.href.length - 1));
+    } else if (window.location.href == "https://kirsp.github.io/TuneMarket/index.html#categories") {
         opn.categories();
-    } else if (window.location.href.slice(0, 43) == "https://kirsp.github.io/TuneMarket#buyMusic") {
-        music.buy(window.location.href.slice(43, window.location.href.length - 1));
+    } else if (window.location.href.slice(0, 54) == "https://kirsp.github.io/TuneMarket/index.html#buyMusic") {
+        music.buy(window.location.href.slice(54, window.location.href.length - 1));
     }
 }
 
