@@ -1,0 +1,378 @@
+.center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#PPCart {
+    width: 200px;
+}
+
+@font-face {
+    font-family: def;
+    src: url("src/fonts/def.otf");
+}
+
+* {
+    font-family: def;
+}
+
+#menu {
+    background-image: url("src/icons/icon.ico");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 120px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 70px;
+    background-color: rgb(43, 43, 43);
+    color: rgb(182, 182, 0);
+    padding-left: 130px;
+    line-height: 50px;
+    vertical-align: middle;
+    user-select: none;
+}
+
+#menu a {
+    font-size: 20px;
+    margin-left: 10px;
+    background-color: rgb(35, 35, 35);
+    background-size: 70px;
+    width: 100px;
+    height: 70px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    padding: 5px 5px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    user-select: none;
+    text-decoration: none;
+    color: rgb(182, 182, 0);
+}
+
+#menu a:hover {
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 25px 5px;
+    background-color: rgb(60, 60, 60);
+    color: rgb(182, 182, 0);
+    transition-duration: 0.2s;
+}
+
+#menu .selected {
+    font-style: italic;
+}
+
+#menu #categories {
+    background-image: url("src/icons/categories.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position-x: center;
+    background-position-y: 80px;
+}
+
+#menu #home {
+    background-image: url("src/icons/home.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: center;
+    background-position-y: 80px;
+}
+
+#menu #notifications {
+    background-image: url("src/icons/notifications.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: center;
+    background-position-y: 77px;
+    font-size: 16px;
+}
+
+#menu #ringtone {
+    background-image: url("src/icons/ringtone.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: center;
+    background-position-y: 80px;
+}
+
+#menu #settings {
+    background-image: url("src/icons/settings.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position-x: center;
+    background-position-y: 78px;
+    margin-left: 100px;
+}
+
+#menu #cart {
+    background-image: url("src/icons/cart.png");
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position-x: center;
+    background-position-y: 78px;
+}
+
+#changeTheme {
+    background-image: url("src/icons/dark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    background-size: 70px;
+}
+
+.hiddenHome {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 120px;
+    height: 70px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#menu span {
+    margin-left: 10px;
+    cursor: default;
+}
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+a:hover {
+    color: rgb(130, 130, 0);
+    transition-duration: 0.2s;
+}
+
+#hiddenBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    opacity: 0.8;
+    background-color: rgb(121, 121, 121);
+    color: yellow;
+    display: none;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+#hiddenBox * {
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+#hiddenBox .x {
+    color: red;
+    font-size: 40px;
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.buyBtn {
+    background-color: yellow;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    font-style: oblique;
+    cursor: pointer;
+    border: none;
+    transition-duration: 0.2s;
+}
+
+.buyBtn:hover {
+    background-color: rgb(182, 182, 0);
+    transition-duration: 0.2s;
+}
+
+.addToCartBtn {
+    background-color: rgb(0, 181, 253);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    font-style: oblique;
+    cursor: pointer;
+    border: none;
+    transition-duration: 0.2s;
+}
+
+.addToCartBtn:hover {
+    background-color: rgb(0, 127, 177);
+    transition-duration: 0.2s;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: yellow;
+}
+
+.item-in-cart {
+    background-color: rgb(60, 60, 60);
+    width: 90%;
+    height: 70px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position-x: -1px;
+    background-position-y: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    position: relative;
+}
+
+.item-in-cart:hover {
+    background-color: rgb(83, 83, 83);
+    transition-duration: 0.2s;
+}
+
+.item-in-cart .name {
+    position: absolute;
+    left: 115px;
+    font-size: 20px;
+}
+
+.item-in-cart .type {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    font-size: 16px;
+}
+
+.item-in-cart .price {
+    position: absolute;
+    right: 40px;
+    top: 50px;
+    font-size: 16px;
+}
+
+#delItemFromCart {
+    position: absolute;
+    right: 150px;
+    top: 30px;
+    width: 29px;
+    height: 25px;
+    transition-duration: 0.2s;
+}
+
+#delItemFromCart:hover {
+    transform: rotate(360deg);
+    transition-duration: 0.2s;
+}
+
+select {
+    background-color: yellow;
+    border-radius: 12px;
+    outline: none;
+}
+
+#search {
+    margin-left: 20px;
+    margin-top: 25px;
+    border: 1px solid yellow;
+    border-top: none;
+    background-color: transparent;
+    color: yellow;
+    outline: none;
+    border-left-width: 4px;
+    border-radius: 12px;
+}
+
+hr {
+    border: 1px solid yellow;
+}
+
+.number-mark {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: fixed;
+    top: 5px;
+    left: 587px;
+    color: white;
+    font-size: 10px;
+}
+.number-mark span {
+    position: relative;
+    top: -15px;
+    left: -15%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.categories-sidenav {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    height: 100%;
+}
+
+.categories-sidenav .section {
+    width: 200px;
+    height: 40px;
+}
+
+.notification {
+    width: 450px;
+    height: 90px;
+    margin-top: 20px;
+    cursor: pointer;
+    padding-left: 20px;
+    transition-duration: 0.2s;
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+    border-radius: 0px;
+}
+
+.notification:hover {
+    background-color: rgb(60, 60, 60);
+    border-radius: 14px;
+    transition-duration: 0.2s;
+}
+
+.notification .name {
+    font-size: 30px;
+}
+
+.notification .msg {
+    font-size: 12px;
+}
+
+.notification .del {
+    background-image: url("src/icons/trash.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-left: 350px;
+    margin-top: -50px;
+    transition-duration: 0.2s;
+}
+
+.notification .del:hover {
+    transform: rotate(360deg);
+    transition-duration: 0.2s;
+}

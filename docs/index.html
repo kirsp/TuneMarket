@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneMarket</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/icons/l-icon.png" type="image/x-icon">
+</head>
+<body id="bg">
+  <div id="theme"></div>
+    <div id="menu">
+        <a id="home" onclick="window.location.href = 'index.html';">Home</a>
+        <a id="categories">Categories</a>
+        <!-- <a id="ringtone">Ringtones</a> -->
+        <a id="cart" onclick="shoppingCart()">Cart</a>
+        <a id="notifications" onclick="opn.notifications()">Notifications</a>
+        <div class="number-mark hidden" id="notifications-marker"></div>
+        <a id="settings">Settings</a>
+        <div id="changeTheme" onclick="changeTheme()"></div>
+        <input list="musicsList" name="search" id="search" onchange="music.search(this.value)" placeholder="Search by ID or name">
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
+
+    <div class="hiddenHome" onclick="window.location.href = 'index.html';" onmousewheel="hiddenMenu()"></div>
+
+    <div id="buy" class="hidden">
+      <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="kirsp.krips@gmail.com">
+        <input type="hidden" name="currency_code" value="GBP" id="buyItemType">
+        <input type="hidden" name="item_name" value="" id="buyItemName">
+        <input type="hidden" name="amount" value="" id="buyItemPrice">
+        <input type="image" src="http://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+      </form>
+    </div>
+    
+    <div id="texts">
+      <h1>News</h1><br>
+      <div id="s1">
+        <h2>Coming soon - Sad piano!</h2>
+        <span>There will be a sadder music that will feature the instruments listed here:</span>
+        <dl>
+          <dd>- Piano</dd>
+          <dd>- Violin</dd>
+          <dd>- Contrabass</dd>
+        </dl>
+        <span>You can preorder <a onclick="music.preorder('0007')">here</a>.</span>
+      </div><br>
+      <div id="s2">
+        <h2>The 3 newest musics:</h2>
+      </div><br>
+      <div id="s3">
+        <h2>Top Rated Music:</h2>
+      </div>
+      <div id="s4">
+        <h2>The cheapest music (personal):</h2>
+      </div>
+    </div>
+
+    <!-- Hidden things -->
+    <div id="hiddenBox"></div>
+
+    <datalist id="musicsList"></datalist>
+</body>
+<script src="script.js"></script>
+</html>
